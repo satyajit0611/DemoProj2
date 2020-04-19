@@ -1,0 +1,46 @@
+<p>login works!</p>
+<label>
+  Name:
+  <input type="text" [formControl]="name">
+</label>
+
+<div>hello</div>
+
+
+
+<div class="csutom_container">
+	<div class="wrap-login">
+		<span class="login-title">
+				Login
+			</span>
+			<div class="clearfix"></div>
+			<div class="wrap-input">
+				<input class="input_resize"type="text" placeholder="Email" [formControl]="email">
+				<span class="symbol-input"><i class="fa fa-envelope"></i></span>
+			</div>
+			<div class="clearfix"></div>
+			<div class="wrap-input">
+				<input class="input_resize" type="password"  placeholder="Password" [formControl]="password">
+				<span class="symbol-input"><i class="fa fa-lock"></i></span>
+			</div>
+			<div class="clearfix"></div>
+			<div class="wrap-input">
+				<label class="container_checkbox">Remember me
+				  <input type="checkbox" checked="checked" name="remember-me">
+				  <span class="checkmark"></span>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+			<div class="wrap-input">
+				<button class="login-btn" type="button">
+					Login
+				</button>
+			</div>
+			<div class="clearfix"></div>
+			<div class="wrap-input">
+				<a routerLink="/registration" class="signup_text">Sign up now</a>
+			</div>
+	</div>
+</div>
+
+

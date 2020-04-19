@@ -1,0 +1,61 @@
+<p>registration works!</p>
+
+<a routerLink="/login">login</a>
+
+<div class="csutom_container">
+	<div class="wrap-register">
+		<h1 class="page-title">Register</h1>
+			<div class="col-md-6">
+			  <div class="input-container input_fields_box">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="First Name" name="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="input-container input_fields_box">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="Last Name" name="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="input-container input_fields_box">
+				<i class="fa fa-envelope icon"></i>
+				<input class="input-field" type="text" placeholder="Email" name="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="input-container input_fields_box">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="User Name" name="">
+			  </div>
+			</div>
+			<div class="col-md-6"> 
+			  <div class="input-container input_fields_box">
+				<i class="fa fa-key icon"></i>
+				<input class="input-field" type="password" placeholder="Password" name="psw">
+			  </div>
+			</div>
+			<div class="col-md-6"> 
+			  <div class="input-container input_fields_box">
+				<i class="fa fa-key icon"></i>
+				<input class="input-field" type="password" placeholder="Confirm Password" name="confirm_psw">
+			  </div>
+			</div>
+			<div class="col-md-6">
+				<div id="datepicker" ngbDatepicker  class="input-group date datepicker_cus" data-date-format="mm-dd-yyyy">
+					<input class="form-control" type="text" readonly />
+					<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+				</div>
+			</div>
+			<input autocomplete="date-field"[formControl]="expectedServiceStartDate"
+                                            bsDatepicker
+                                            [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', showWeekNumbers: false, containerClass: 'theme-dark-blue cal-right' }"
+                                            type="text" #dp="bsDatepicker" class="form-control" id="datePicker"
+                                            placeholder="Start Date" >
+			<div class="col-md-12" style="text-align: center;">
+				<button class="login-btn" type="button" style="width:200px;height: 42px;display: initial;margin-top: 30px;">
+					Submit
+				</button>
+			</div>
+	</div>
+</div>
